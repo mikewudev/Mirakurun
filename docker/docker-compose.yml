@@ -17,7 +17,11 @@ services:
     network_mode: host
     devices:
       - /dev/bus:/dev/bus
-      - /dev/dvb:/dev/dvb
+      - /dev/pxmlt5video0:/dev/pxmlt5video0
+      - /dev/pxmlt5video1:/dev/pxmlt5video1
+      - /dev/pxmlt5video2:/dev/pxmlt5video2
+      - /dev/pxmlt5video3:/dev/pxmlt5video3
+      - /dev/pxmlt5video4:/dev/pxmlt5video4
     volumes:
       # ** CAUTION **
       # (default) `/usr/local/mirakurun/*` has been moved to `/opt/mirakurun/*`
